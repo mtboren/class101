@@ -131,11 +131,14 @@ git push origin master
 ```
 
 
-#### If we have time in in Week #1
+### Week #2
+
+* backup and remove db.sqlite3 and add to .gitignore
+* talk about port 8000 for those on a shared server
 * lets look at the `project/project/settings`:
     * database
     * other stuff
-* let's look at project/project/urls.py
+* let's look at project/project/urls.py -- done in Week #1
 * And ...
 
 ```
@@ -143,11 +146,15 @@ git push origin master
     python manage.py makemigrations
     python manage.py makemigrations
     python manage.py migrate
+
+    # Create 3 superusers
+    python manage.py createsuperuser
+    python manage.py createsuperuser
     python manage.py createsuperuser
     python manage.py runserver
 
     # Browse to /admin
-    # And then let's look at the uncoupling
+    # And then let's look at the uncoupling - done in Week #1
 
     vim project/project/urls.py
     python manage.py runserver
@@ -175,5 +182,12 @@ git push origin master
     >>>
 
 ```
+
+* Yet to plan
+    * Talk about requests - hello world
+    * Start an app
+    * Create a view
+    * Do some templating  stuff
+
 
 ##### vim: ai et ts=4 sts=4 sw=4 nu ru
