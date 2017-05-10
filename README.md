@@ -27,7 +27,7 @@ ssh -T git@github.com
 You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-* \[Windows] or, instead of SSH keys, can use Windows credential manager with git.exe
+* \[Windows] or, instead of SSH and SSH keys, can use Windows credential manager with git.exe; if so, no need to test the `ssh -T git@github.com` command above
 
 ### Notes on python
 Python is space sensitive.  To make your life easier, and to follow recommended style
@@ -93,6 +93,8 @@ redis-1-3504l              1/1       Running   0          3d
 ```
 # This is an example - use your git, not mine, your username, etc., etc.
 git clone git@github.com:johnedstone/class101.git
+# Or, to clone via https (Like, say, without SSH keys set up; and, this example is on Windows):
+git clone https://github.com/johnedstone/class101.git C:\temp\modwebdev_class101
 cd class101
 git config user.name "johnedstone"
 git config user.email "johnedstone@gmail.com"
