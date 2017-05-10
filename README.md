@@ -27,6 +27,8 @@ ssh -T git@github.com
 You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+* \[Windows] or, instead of SSH keys, can use Windows credential manager with git.exe
+
 ### Notes on python
 Python is space sensitive.  To make your life easier, and to follow recommended style
 
@@ -37,7 +39,7 @@ Python is space sensitive.  To make your life easier, and to follow recommended 
 ```
 set ai et ts=4 sw=4 sts=4 nu ru
 
-# Or, put this one line here 
+# Or, put this one line here
 set modeline
 # and add a line to each file as shown here
 
@@ -96,13 +98,23 @@ git config user.name "johnedstone"
 git config user.email "johnedstone@gmail.com"
 git config push.default simple
 
+## if you do not yet have "virtualenv" package installed, install via pip:
+pip install virtualenv --proxy <fqdn:port>
+
+## Note: make the ~/.virtualenvs dir if it does not already exist
 virtualenv ~/.virtualenvs/class101
+## on *nix:
 source ~/.virtualenvs/class101/bin/activate
-pip install pip --proxy <ip:ort> --upgrade
+## or, on Windows (in PowerShell):
+. ~\.virtualenvs\class101\Scripts\activate.ps1
+pip install pip --proxy <fqdn:port> --upgrade
 deactivate
 
+## on *nix:
 source ~/.virtualenvs/class101/bin/activate
-pip install --proxy <ip:port>  django
+## or, on Windows (in PowerShell):
+. ~\.virtualenvs\class101\Scripts\activate.ps1
+pip install --proxy <fqdn:port> django
 pip freeze
 
 # https://docs.djangoproject.com/en/1.11/intro/tutorial01/
