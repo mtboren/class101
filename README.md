@@ -134,6 +134,7 @@ git push origin master
 ### Week #2
 
 * backup and remove db.sqlite3 and add to .gitignore
+* backup and talk about 2x ROR and languages in OSP
 * talk about port 8000 for those on a shared server
 * lets look at the `project/project/settings`:
     * database
