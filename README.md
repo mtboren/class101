@@ -161,13 +161,15 @@ git push origin master
 
 ### Week #2
 * The assumption is that you at least have your virtual environment set up from week #1
-* backup and remove db.sqlite3 and add to .gitignore
-* backup and talk about 2x ROR and languages in OSP
-* talk about port 8000 for those on a shared server
-* lets look at the `project/project/settings.py`:
+* We will discuss
+    * From Week #1: remove db.sqlite3 and add to .gitignore
+    * From Week #1: talk about 2x ROR and languages in OSP
+    * From Week #1: talk about port 8000 for those on a shared server
+* This week we will
+    * look at the `project/project/settings.py`:
     * database
     * other stuff
-* Week #2 Project
+
 
 ```
 # Where were we from last week
