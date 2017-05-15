@@ -338,8 +338,6 @@ shell> python manage.py shell
 >>>
 >>> Server.objects.all()
 >>>
->>> Server.objects.filter(email='b@b.com')
->>>
 
 
 # Let's work on the view
