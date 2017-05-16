@@ -163,8 +163,26 @@ git push origin master
 * The assumption is that you at least have your virtual environment set up from week #1
 * We will discuss
     * From Week #1: remove db.sqlite3 and add to .gitignore
+        ```
+        # At least do this
+        shell> pwd
+        ~/class101
+
+        shell> echo '*pyc' >> .gitignore
+        shell> echo 'db.sqlited' >> .gitignore
+
+        # Maybe this
+        shell> git rm -f project/project/*.pyc
+        shell> git rm -f project/db.sqlite3
+        shell> git add .gitignore
+        shell> git status
+        
+        ```
     * From Week #1: talk about 2x ROR and languages in OSP
     * From Week #1: talk about port 8000 for those on a shared server
+    * From Week #1: Let's get clear on these different concepts: .virtualenv (python), git, django-admin startproject project
+    * From Week #1: Woo Hoo, 'I have a web server' - everything inside (code) get's handed to PaaS (in the end)
+
 * This week we will
     * look at the `project/project/settings.py`:
     * database
