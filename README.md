@@ -250,6 +250,12 @@ System check identified no issues (0 silenced).
 Django version 1.11.1, using settings 'project.settings'
 Starting development server at http://127.0.0.1:8000/
 
+# Log into to your server from elsewhere with ssh -x -C -L 8000:127.0.0.1:8000
+# and then request from browser http://127.0.0.1:8000
+# Alternative, edit project/project/settings and set ALLOWED_HOST = ['*']
+# request from browser http://fqdn:8000
+
+
 # It there is no need to start over, then start here:
 # Starting Week #2
 shell> pwd
