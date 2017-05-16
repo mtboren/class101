@@ -162,7 +162,8 @@ git push origin master
 ### Week #2
 * The assumption is that you at least have your virtual environment set up from week #1
 * We will discuss
-    * From Week #1: remove db.sqlite3 and add to .gitignore
+    * From Week #1: remove db.sqlite3 and add to .gitignore 
+      see https://github.com/github/gitignore/blob/master/Python.gitignore
         ```
         # At least do this
         shell> pwd
